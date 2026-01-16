@@ -8,7 +8,12 @@ const cardSchema = new mongoose.Schema({
   },
   message: {
     type: String,
-    trim: true
+    default: ''
+  },
+  category: {
+    type: String,
+    enum: ['birthday', 'proposal'],
+    default: 'birthday'
   },
   createdAt: {
     type: Date,
@@ -17,7 +22,6 @@ const cardSchema = new mongoose.Schema({
   expiresAt: {
     type: Date,
     required: true,
-    expires: 0 // TTL index uses expiresAt directly
   }
 });
 
@@ -26,5 +30,4 @@ const cardSchema = new mongoose.Schema({
  * Card will be deleted automatically when expiresAt < current time
  */
 
-const cardModel = mongoose.model("Card", cardSchema);
-export default cardModel;
+export default mongoose.model('Card', cardSchema);

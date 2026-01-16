@@ -137,14 +137,14 @@ const PreviewPage = () => {
           >
             <h3 className="text-xl font-bold mb-4">Create Another Card</h3>
             <p className="text-zinc-400 mb-6">
-              Want to create more birthday magic?
+              Want to create more birthday/proposal magic?
             </p>
             <Link
               to="/"
               className="inline-flex items-center space-x-2 px-6 py-3 bg-linear-to-r from-blue-600 to-emerald-400 rounded-xl hover:from-blue-700 hover:to-emerald-500 transition-all duration-300"
             >
               <Plus className="w-5 h-5" />
-              <span>New Birthday Card</span>
+              <span>Create New Card</span>
             </Link>
           </motion.div>
 
