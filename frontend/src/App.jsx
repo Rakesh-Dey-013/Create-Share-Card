@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <ToastProvider>
-        <AnimatePresence mode="wait">
+        {/* <AnimatePresence mode="wait"> */}
           <AnimatedBackground />
           <Layout>
             <Routes>
@@ -20,7 +20,7 @@ function App() {
               <Route path="/card/:id" element={<SharedCardPage />} />
             </Routes>
           </Layout>
-        </AnimatePresence>
+        {/* </AnimatePresence> */}
       </ToastProvider>
     </Router>
   )
