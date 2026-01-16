@@ -85,7 +85,7 @@ const PreviewPage = () => {
         <div>
           <h2 className="text-2xl font-bold mb-6 flex items-center">
             <Share2 className="w-6 h-6 mr-2 text-emerald-400" />
-            Your Birthday Card
+            Your Created Special Card
           </h2>
           
           <BirthdayCard card={card} isPreview />

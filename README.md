@@ -7,6 +7,8 @@ A modern, elegant web application for creating beautiful digital cards that auto
 
 ![Magic Cards](https://img.shields.io/badge/Magic-Cards-purple?style=for-the-badge)
 
+### 🧑‍💻 Live Demo: [https://create-share-card.vercel.app/](https://create-share-card.vercel.app/)
+
 ## ✨ Features
 
 ### 🎂 Card Categories

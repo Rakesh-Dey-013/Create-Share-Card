@@ -70,7 +70,7 @@ const SharedCardPage = () => {
       {/* Header */}
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold gradient-text mb-10">
-          Birthday Card for {card.name}
+          Special Card for {card.name}
         </h1>
       </div>
 
