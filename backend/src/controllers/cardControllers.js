@@ -4,7 +4,7 @@ import { getRemainingTime } from '../utils/timeUtils.js';
 // Create card --->
 export const createCard = async (req, res) => {
     try {
-        const { name, message } = req.body;
+        const { name, message, category = 'birthday' } = req.body;
 
         if (!name) {
             return res.status(400).json({ message: 'Name is required' });
@@ -16,15 +16,16 @@ export const createCard = async (req, res) => {
         const createdCard = await cardModel.create({
             name,
             message,
+            category,
             createdAt,
             expiresAt
         });
 
-        console.log('Card created successfully.');
+        console.log(`${category} card created successfully.`);
 
         res.status(201).json({
             success: true,
-            message: 'Card created successfully',
+            message: `${category} card created successfully`,
             data: createdCard
         });
 
