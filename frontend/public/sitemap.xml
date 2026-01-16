@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://create-share-card.vercel.app/</loc>
-    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <changefreq>daily</changefreq>
   </url>
 
   <url>
-    <loc>https://create-share-card.vercel.app/create</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://create-share-card.vercel.app/card</loc>
     <priority>0.8</priority>
+    <changefreq>daily</changefreq>
   </url>
+
 </urlset>
